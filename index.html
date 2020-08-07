@@ -18,11 +18,11 @@
         <div class="form_container__dati d_flex text_red">
           <div class="input_column d_flex">
             <label for="nome_cognome">Nome Cognome</label>
-            <input id="nome_cognome" type="text" placeholder="Nome Cognome">
+            <input id="nome_cognome" type="text" placeholder="Inserisci il tuo nome">
           </div>
           <div class="input_column d_flex">
             <label for="km">Km da percorrere</label>
-            <input id="km" type="number" min="1" placeholder="Km">
+            <input id="km" type="number" min="1" placeholder="Inserisci i km">
           </div>
           <div class="input_column d_flex">
             <label for="eta">Fascia d'et&agrave;</label>
@@ -36,16 +36,44 @@
         <!-- /Input dati -->
 
         <!-- Buttons -->
-        <div class="form_container__buttons">
-
+        <div class="form_container__buttons text_center">
+          <button id="genera" class="btn" type="button" name="button">Genera</button>
+          <button id="annulla" class="btn" type="button" name="button">Annulla</button>
         </div>
         <!-- /Buttons -->
       </div>
       <!-- /Contenitore del form -->
 
+      <h2 class="text_uppercase text_white text_center">Il tuo biglietto</h2>
       <!-- Contenitore del ticket -->
       <div class="ticket_container">
-
+        <h3 class="text_uppercase">Dettaglio passeggeri</h3>
+        <div class="row d_flex">
+          <div class="ticket_container__passeggero">
+            <h4 class="text_uppercase">Nome passeggero</h4>
+            <h4 id="nome_passeggero">Lorenzo</h4>
+          </div>
+          <div class="ticket_container__biglietto">
+            <table>
+              <thead>
+                <tr>
+                  <th>Offerta</th>
+                  <th>Carrozza</th>
+                  <th>Codice <br> CP</th>
+                  <th>Costo <br> biglietto</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td id="offerta">Sconto</td>
+                  <td id="carrozza">numero</td>
+                  <td id="codice">codice</td>
+                  <td id="costo">costo</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
       <!-- /Contenitore del ticket -->
     </div>

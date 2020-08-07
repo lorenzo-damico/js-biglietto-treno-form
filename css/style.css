@@ -13,6 +13,17 @@ h1 {
   font-size: 25px;
   margin: 20px;
 }
+h2 {
+  font-size: 25px;
+  margin-top: 20px;
+}
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
 /* Container */
 .container {
   max-width: 850px;
@@ -24,6 +35,9 @@ h1 {
 }
 .text_red {
   color: #B91450;
+}
+.text_black {
+  color: #000;
 }
 /* Mix */
 .text_uppercase {
@@ -43,6 +57,7 @@ h1 {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   padding: 20px 0;
 }
+/* Contenitore form dati */
 .form_container__dati {
   justify-content: center;
 }
@@ -58,6 +73,61 @@ input, select {
   padding: 5px 0;
   margin-top: 10px;
 }
+input:focus, select:focus {
+  background-color: #B91450;
+  border: 1px solid black;
+  color: #fff;
+}
 input::placeholder {
   text-align: center;
+  font-size: 15px;
+}
+input:focus::placeholder {
+  color: #fff;
+}
+/* Contenitore form buttons */
+.btn {
+  background-color: lightgrey;
+  border: 1px solid darkgrey;
+  border-radius: 5px;
+  color: #B91450;
+  font-weight: bold;
+  padding: 8px 15px;
+  margin: 30px 5px 0;
+  cursor: pointer;
+ }
+.btn:hover {
+  background-color: grey;
+}
+
+/* Contenitore ticket */
+.ticket_container {
+  background-color: #fff;
+  padding: 20px;
+}
+.ticket_container .row {
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+}
+.ticket_container__passeggero {
+  width: 20%;
+  background-color: #808080;
+  padding: 20px;
+  flex-shrink: 0;
+}
+.ticket_container__biglietto {
+  width: 80%;
+}
+.ticket_container__biglietto table {
+  width: 90%;
+  margin: auto;
+  text-align: left;
+  font-size: 20px;
+}
+.ticket_container__biglietto table th:first-child {
+  height: 80px;
+  width: 30%;
+}
+.ticket_container__biglietto table td {
+  height: 80px;
 }
