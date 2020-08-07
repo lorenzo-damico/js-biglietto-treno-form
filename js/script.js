@@ -19,10 +19,10 @@ genera.addEventListener("click",
 
     // 5. Scrivo la condizione per la quale si ottengono sconti e stampo nell'html il tipo di offerta
     if (eta == "minorenne") {
-      prezzoBiglietto = prezzoBiglietto - ((prezzoBiglietto * 20) / 100)
+      prezzoBiglietto = prezzoBiglietto - ((prezzoBiglietto * 20) / 100);
       document.getElementById("offerta").innerHTML = "Sconto " + eta;
     } else if (eta == "over 65") {
-      prezzoBiglietto = prezzoBiglietto - ((prezzoBiglietto * 40) / 100)
+      prezzoBiglietto = prezzoBiglietto - ((prezzoBiglietto * 40) / 100);
       document.getElementById("offerta").innerHTML = "Sconto " + eta;
     } else {
       document.getElementById("offerta").innerHTML = eta;
