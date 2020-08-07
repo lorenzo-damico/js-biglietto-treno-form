@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Typo */
+body {
+  background-color: #B91450;
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  font-size: 25px;
+  margin: 20px;
+}
+/* Container */
+.container {
+  max-width: 850px;
+  margin: auto;
+}
+/* Color */
+.text_white {
+  color: #fff;
+}
+.text_red {
+  color: #B91450;
+}
+/* Mix */
+.text_uppercase {
+  text-transform: uppercase;
+}
+.text_center {
+  text-align: center;
+}
+.d_flex {
+  display: flex;
+}
+
+/* Contenitore form */
+.form_container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  padding: 20px 0;
+}
+.form_container__dati {
+  justify-content: center;
+}
+.input_column {
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+}
+input, select {
+  text-align: center;
+  border: 1px solid #B91450;
+  border-radius: 5px;
+  padding: 5px 0;
+  margin-top: 10px;
+}
+input::placeholder {
+  text-align: center;
+}

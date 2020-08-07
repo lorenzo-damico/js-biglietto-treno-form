@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prezzo biglietto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- Contenitore pagina -->
+    <div class="container">
+      <h1 class="text_uppercase text_center text_white">Calcola il prezzo del tuo biglietto</h1>
+      <!-- Contenitore del form -->
+      <div class="form_container">
+        <!-- Input dati -->
+        <div class="form_container__dati d_flex text_red">
+          <div class="input_column d_flex">
+            <label for="nome_cognome">Nome Cognome</label>
+            <input id="nome_cognome" type="text" placeholder="Nome Cognome">
+          </div>
+          <div class="input_column d_flex">
+            <label for="km">Km da percorrere</label>
+            <input id="km" type="number" min="1" placeholder="Km">
+          </div>
+          <div class="input_column d_flex">
+            <label for="eta">Fascia d'et&agrave;</label>
+            <select id="eta" name="eta">
+              <option value="">minorenne</option>
+              <option value="">maggiorenne</option>
+              <option value="">over 65</option>
+            </select>
+          </div>
+        </div>
+        <!-- /Input dati -->
+
+        <!-- Buttons -->
+        <div class="form_container__buttons">
+
+        </div>
+        <!-- /Buttons -->
+      </div>
+      <!-- /Contenitore del form -->
+
+      <!-- Contenitore del ticket -->
+      <div class="ticket_container">
+
+      </div>
+      <!-- /Contenitore del ticket -->
+    </div>
+    <!-- /Contenitore pagina -->
+
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
