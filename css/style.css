@@ -8,6 +8,7 @@
 body {
   background-color: #B91450;
   font-family: 'Roboto', sans-serif;
+  padding: 0 10px;
 }
 h1 {
   font-size: 25px;
@@ -60,11 +61,12 @@ h4 {
 /* Contenitore form dati */
 .form_container__dati {
   justify-content: center;
+  flex-wrap: wrap;
 }
 .input_column {
   flex-direction: column;
   align-items: center;
-  margin: 0 20px;
+  margin: 10px 20px;
 }
 input, select {
   text-align: center;
@@ -108,21 +110,25 @@ input:focus::placeholder {
 .ticket_container .row {
   border-top: 1px solid #808080;
   border-bottom: 1px solid #808080;
+  flex-wrap: wrap;
 }
 .ticket_container__passeggero {
-  width: 20%;
+  width: 25%;
+  min-width: 140px;
   background-color: #808080;
   padding: 20px;
-  flex-shrink: 0;
 }
 .ticket_container__biglietto {
-  width: 80%;
+  width: 75%;
 }
 .ticket_container__biglietto table {
   width: 90%;
   margin: auto;
   text-align: left;
-  font-size: 20px;
+  font-size: 18px;
+}
+.ticket_container__biglietto table th {
+  padding: 0 5px;
 }
 .ticket_container__biglietto table th:first-child {
   height: 80px;
@@ -130,4 +136,5 @@ input:focus::placeholder {
 }
 .ticket_container__biglietto table td {
   height: 80px;
+  padding: 0 5px;
 }
