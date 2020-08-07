@@ -27,9 +27,9 @@
           <div class="input_column d_flex">
             <label for="eta">Fascia d'et&agrave;</label>
             <select id="eta" name="eta">
-              <option value="">minorenne</option>
-              <option value="">maggiorenne</option>
-              <option value="">over 65</option>
+              <option value="minorenne">minorenne</option>
+              <option value="maggiorenne">maggiorenne</option>
+              <option value="over 65">over 65</option>
             </select>
           </div>
         </div>
@@ -46,12 +46,12 @@
 
       <h2 class="text_uppercase text_white text_center">Il tuo biglietto</h2>
       <!-- Contenitore del ticket -->
-      <div class="ticket_container">
+      <div id="ticket_container" class="ticket_container">
         <h3 class="text_uppercase">Dettaglio passeggeri</h3>
         <div class="row d_flex">
           <div class="ticket_container__passeggero">
             <h4 class="text_uppercase">Nome passeggero</h4>
-            <h4 id="nome_passeggero">Lorenzo</h4>
+            <h4 id="nome_passeggero"></h4>
           </div>
           <div class="ticket_container__biglietto">
             <table>
@@ -65,10 +65,10 @@
               </thead>
               <tbody>
                 <tr>
-                  <td id="offerta">Sconto</td>
-                  <td id="carrozza">numero</td>
-                  <td id="codice">codice</td>
-                  <td id="costo">costo</td>
+                  <td id="offerta"></td>
+                  <td id="carrozza"></td>
+                  <td id="codice"></td>
+                  <td id="costo"></td>
                 </tr>
               </tbody>
             </table>

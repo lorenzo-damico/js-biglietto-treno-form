@@ -106,6 +106,7 @@ input:focus::placeholder {
 .ticket_container {
   background-color: #fff;
   padding: 20px;
+  display: none;
 }
 .ticket_container .row {
   border-top: 1px solid #808080;
@@ -137,4 +138,7 @@ input:focus::placeholder {
 .ticket_container__biglietto table td {
   height: 80px;
   padding: 0 5px;
+}
+.show {
+  display: block;
 }
